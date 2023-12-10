@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Compra</title>
+</head>
+<body>
+
+    <!-- Menu -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <span class="navbar-brand mb-0 h1">Mi Tienda Online</span>
+                      <form class="d-flex" role="search">
+                        <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#detailProducts" id="modal-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="27" height="27" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                          </svg>
+                        </button>
+                      </form>
+                    </div>
+                    
+                  </nav>
+            </div>
+        </div>
+    </section>
+
+<!-- Productos -->
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                <div class="card">
+                    <img src="/img/v1.jpg" class="card-img-top product-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Transformer1</h5>
+                        <p class="card-text">G1</p>
+
+                        <button type="button" class="btn btn-info btn-sm product-button">
+                            <span class="badge text-bg-info">+</span>                  
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            L <span class="product-price">100</span>                       
+                        </button>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                <div class="card">
+                    <img src="/img/v2.jpg" class="card-img-top product-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Transformer2</h5>
+                        <p class="card-text">G1</p>
+
+                        <button type="button" class="btn btn-info btn-sm product-button">
+                            <span class="badge text-bg-info">+</span>                  
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            L <span class="product-price">100</span>                       
+                        </button>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                <div class="card">
+                    <img src="/img/v3.jpg" class="card-img-top product-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Transformer3</h5>
+                        <p class="card-text">G1</p>
+
+                        <button type="button" class="btn btn-info btn-sm product-button">
+                            <span class="badge text-bg-info">+</span>                  
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            L <span class="product-price">100</span>                       
+                        </button>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                <div class="card">
+                    <img src="/img/v4.jpg" class="card-img-top product-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Transformer4</h5>
+                        <p class="card-text">G1</p>
+
+                        <button type="button" class="btn btn-info btn-sm product-button">
+                            <span class="badge text-bg-info">+</span>                  
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm">
+                            L <span class="product-price">100</span>                       
+                        </button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+<!-- Modal -->
+<div class="modal fade" id="detailProducts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="t-modal">
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
