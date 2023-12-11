@@ -9,11 +9,13 @@ let modalBody = document.getElementById("t-modal");
 //asigna valores a arreglo
 for (let i = 0; i < btnProduct.length; i++) {
     btnProduct[i].addEventListener("click", function () {
-  
+     
+
         //validar el producto en el carrito
         for(let j=0;j<products.length;j++){
             if(products[j].objTitle == title[i].textContent){
                 products[j].objCant += 1 ;
+                btnProduct[i].innerHTML = ' <span class="badge text-bg-info"> + hay('+ products[j].objCant +')</span>';
                 return;
             }
         }
@@ -25,6 +27,7 @@ for (let i = 0; i < btnProduct.length; i++) {
             objImg: img[i].src,
             objCant: 1,
         };
+        btnProduct[i].innerHTML = ' <span class="badge text-bg-info"> + hay(1)</span>';
         products.push(element);
     });
 }

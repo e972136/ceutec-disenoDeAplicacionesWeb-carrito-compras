@@ -10,3 +10,7 @@
 .head-img-table{
     width: 300px !important;
 }
+
+.carousel-item img{
+    height: 70vh !important;
+}
